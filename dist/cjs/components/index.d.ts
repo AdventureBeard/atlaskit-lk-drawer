@@ -28,5 +28,10 @@ export declare const DrawerItemTheme: (props: {
 export * from './skeletons';
 export * from './item-group';
 export * from './item';
-declare const _default: any;
+declare const _default: React.ForwardRefExoticComponent<Pick<Pick<Pick<DrawerProps, "isFocusLockEnabled" | "autoFocusFirstElem" | "children" | "shouldReturnFocus" | "shouldUnmountOnExit" | "width" | "onClose" | "icon" | "onCloseComplete" | "onKeyDown" | "isOpen">, "children" | "shouldUnmountOnExit" | "onClose" | "icon" | "onCloseComplete" | "onKeyDown" | "isOpen"> & Partial<Pick<Pick<DrawerProps, "isFocusLockEnabled" | "autoFocusFirstElem" | "children" | "shouldReturnFocus" | "shouldUnmountOnExit" | "width" | "onClose" | "icon" | "onCloseComplete" | "onKeyDown" | "isOpen">, "isFocusLockEnabled" | "autoFocusFirstElem" | "shouldReturnFocus" | "width">> & Partial<Pick<{
+    width: DrawerWidth;
+    isFocusLockEnabled: boolean;
+    shouldReturnFocus: boolean;
+    autoFocusFirstElem: boolean;
+}, never>> & React.RefAttributes<any> & import("@atlaskit/analytics-next/dist/cjs/withAnalyticsContext").WithContextProps, "isFocusLockEnabled" | "autoFocusFirstElem" | "children" | "shouldReturnFocus" | "shouldUnmountOnExit" | "width" | "onClose" | "icon" | "onCloseComplete" | "onKeyDown" | "isOpen" | "key" | "analyticsContext"> & React.RefAttributes<any>>;
 export default _default;

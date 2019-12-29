@@ -20,6 +20,7 @@
   "atlaskit:src": "src/index.ts",
   "sideEffects": false,
   "dependencies": {
+    "@adventurebeard/atlaskit-lk-blanket": "https://github.com/AdventureBeard/atlaskit-lk-blanket#ffb0098bb7a342b770d108c54852981741141316",
     "@atlaskit/analytics-next": "^6.3.1",
     "@atlaskit/avatar": "^17.1.3",
     "@atlaskit/blanket": "^10.0.14",

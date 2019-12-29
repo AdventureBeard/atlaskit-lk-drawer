@@ -5,7 +5,7 @@ import Portal from '@atlaskit/portal';
 import { ThemeProvider } from 'styled-components';
 import { TransitionGroup, Transition } from 'react-transition-group';
 import { createAndFireEvent, withAnalyticsEvents, withAnalyticsContext, } from '@atlaskit/analytics-next';
-import Blanket from '@atlaskit/blanket';
+import Blanket from '@adventurebeard/atlaskit-lk-blanket';
 import { name as packageName, version as packageVersion, } from '../version.json';
 import drawerItemTheme from '../theme/drawer-item-theme';
 import FocusLock from './focus-lock';

@@ -16,7 +16,7 @@ import {
   withAnalyticsContext,
   CreateUIAnalyticsEvent,
 } from '@atlaskit/analytics-next';
-import Blanket from '@atlaskit/blanket';
+import Blanket from '@adventurebeard/atlaskit-lk-blanket';
 import {
   name as packageName,
   version as packageVersion,

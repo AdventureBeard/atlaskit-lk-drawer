@@ -2,16 +2,16 @@ declare const _default: {
     [x: number]: {
         padding: {
             compact: {
-                bottom: any;
-                left: any;
-                right: any;
-                top: any;
-            };
-            default: {
-                bottom: any;
+                bottom: number;
                 left: number;
                 right: number;
-                top: any;
+                top: number;
+            };
+            default: {
+                bottom: number;
+                left: number;
+                right: number;
+                top: number;
             };
         };
         borderRadius: number;
@@ -20,7 +20,7 @@ declare const _default: {
             default: number;
         };
         beforeItemSpacing: {
-            compact: any;
+            compact: number;
             default: number;
         };
         default: {

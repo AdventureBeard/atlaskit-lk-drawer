@@ -7,7 +7,7 @@ var portal_1 = tslib_1.__importDefault(require("@atlaskit/portal"));
 var styled_components_1 = require("styled-components");
 var react_transition_group_1 = require("react-transition-group");
 var analytics_next_1 = require("@atlaskit/analytics-next");
-var blanket_1 = tslib_1.__importDefault(require("@atlaskit/blanket"));
+var atlaskit_lk_blanket_1 = tslib_1.__importDefault(require("@adventurebeard/atlaskit-lk-blanket"));
 var version_json_1 = require("../version.json");
 var drawer_item_theme_1 = tslib_1.__importDefault(require("../theme/drawer-item-theme"));
 var focus_lock_1 = tslib_1.__importDefault(require("./focus-lock"));
@@ -93,7 +93,7 @@ var DrawerBase = /** @class */ (function (_super) {
                 react_1.default.createElement(react_transition_group_1.TransitionGroup, { component: OnlyChild },
                     react_1.default.createElement(react_1.Fragment, null,
                         react_1.default.createElement(transitions_1.Fade, { in: isOpen },
-                            react_1.default.createElement(blanket_1.default, { isTinted: true, onBlanketClicked: this.handleBlanketClick })),
+                            react_1.default.createElement(atlaskit_lk_blanket_1.default, { isTinted: true, onBlanketClicked: this.handleBlanketClick })),
                         react_1.default.createElement(focus_lock_1.default, { autoFocusFirstElem: autoFocusFirstElem, isFocusLockEnabled: isFocusLockEnabled, shouldReturnFocus: shouldReturnFocus },
                             react_1.default.createElement(primitives_1.default, { icon: icon, in: isOpen, onClose: this.handleBackButtonClick, onCloseComplete: onCloseComplete, width: width, shouldUnmountOnExit: shouldUnmountOnExit }, children)))))));
     };
