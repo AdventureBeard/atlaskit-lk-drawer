@@ -45,7 +45,7 @@ const Wrapper = ({
         width: widths[width],
         zIndex: layers.blanket() + 1,
       }}
-      className='ak-drawer-wrapper'
+      className="ak-drawer-wrapper"
       {...props}
     />
   );
@@ -57,7 +57,7 @@ const Wrapper = ({
 const Content: FC = props => (
   <div
     css={{ flex: 1, marginTop: 3 * gridSize(), overflow: 'auto' }}
-    className='ak-drawer-content'
+    className="ak-drawer-content"
     {...props}
   />
 );
@@ -80,7 +80,7 @@ const Sidebar: FC = props => {
         paddingTop: 3 * gridSize(),
         width: 8 * gridSize(),
       }}
-      className='ak-drawer-sidebar'
+      className="ak-drawer-sidebar"
       {...props}
     />
   );
@@ -88,6 +88,7 @@ const Sidebar: FC = props => {
 
 interface IconWrapperProps {
   onClick?: (event: MouseEvent<HTMLElement>) => void;
+  className: string;
 }
 const IconWrapper: FC<IconWrapperProps> = props => (
   <button
@@ -134,6 +135,7 @@ export default class DrawerPrimitive extends Component<DrawerPrimitiveProps> {
       <Slide component={Wrapper} onExited={onCloseComplete} {...props}>
         <Sidebar>
           <IconWrapper
+            className="ak-drawer-icon-wrapper"
             onClick={onClose}
             data-test-selector="DrawerPrimitiveSidebarCloseButton"
           >

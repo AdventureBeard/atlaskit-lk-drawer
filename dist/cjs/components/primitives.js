@@ -31,11 +31,11 @@ var Wrapper = function (_a) {
             top: 0,
             width: widths[width],
             zIndex: constants_1.layers.blanket() + 1,
-        }, className: 'ak-drawer-wrapper' }, props)));
+        }, className: "ak-drawer-wrapper" }, props)));
 };
 // Content
 // ------------------------------
-var Content = function (props) { return (core_1.jsx("div", tslib_1.__assign({ css: { flex: 1, marginTop: 3 * constants_1.gridSize(), overflow: 'auto' }, className: 'ak-drawer-content' }, props))); };
+var Content = function (props) { return (core_1.jsx("div", tslib_1.__assign({ css: { flex: 1, marginTop: 3 * constants_1.gridSize(), overflow: 'auto' }, className: "ak-drawer-content" }, props))); };
 // Sidebar / Icons etc.
 // ------------------------------
 var Sidebar = function (props) {
@@ -50,7 +50,7 @@ var Sidebar = function (props) {
             paddingBottom: 2 * constants_1.gridSize(),
             paddingTop: 3 * constants_1.gridSize(),
             width: 8 * constants_1.gridSize(),
-        }, className: 'ak-drawer-sidebar' }, props)));
+        }, className: "ak-drawer-sidebar" }, props)));
 };
 var IconWrapper = function (props) { return (core_1.jsx("button", tslib_1.__assign({ type: "button", css: {
         alignItems: 'center',
@@ -84,7 +84,7 @@ var DrawerPrimitive = /** @class */ (function (_super) {
         var _a = this.props, children = _a.children, Icon = _a.icon, onClose = _a.onClose, onCloseComplete = _a.onCloseComplete, props = tslib_1.__rest(_a, ["children", "icon", "onClose", "onCloseComplete"]);
         return (core_1.jsx(transitions_1.Slide, tslib_1.__assign({ component: Wrapper, onExited: onCloseComplete }, props),
             core_1.jsx(Sidebar, null,
-                core_1.jsx(IconWrapper, { onClick: onClose, "data-test-selector": "DrawerPrimitiveSidebarCloseButton" }, Icon ? core_1.jsx(Icon, { size: "large" }) : core_1.jsx(arrow_left_1.default, { label: "Close drawer" }))),
+                core_1.jsx(IconWrapper, { className: "ak-drawer-icon-wrapper", onClick: onClose, "data-test-selector": "DrawerPrimitiveSidebarCloseButton" }, Icon ? core_1.jsx(Icon, { size: "large" }) : core_1.jsx(arrow_left_1.default, { label: "Close drawer" }))),
             core_1.jsx(Content, null, children)));
     };
     return DrawerPrimitive;

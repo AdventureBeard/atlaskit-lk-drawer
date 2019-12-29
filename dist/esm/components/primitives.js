@@ -29,11 +29,11 @@ var Wrapper = function (_a) {
             top: 0,
             width: widths[width],
             zIndex: layers.blanket() + 1,
-        }, className: 'ak-drawer-wrapper' }, props)));
+        }, className: "ak-drawer-wrapper" }, props)));
 };
 // Content
 // ------------------------------
-var Content = function (props) { return (jsx("div", __assign({ css: { flex: 1, marginTop: 3 * gridSize(), overflow: 'auto' }, className: 'ak-drawer-content' }, props))); };
+var Content = function (props) { return (jsx("div", __assign({ css: { flex: 1, marginTop: 3 * gridSize(), overflow: 'auto' }, className: "ak-drawer-content" }, props))); };
 // Sidebar / Icons etc.
 // ------------------------------
 var Sidebar = function (props) {
@@ -48,7 +48,7 @@ var Sidebar = function (props) {
             paddingBottom: 2 * gridSize(),
             paddingTop: 3 * gridSize(),
             width: 8 * gridSize(),
-        }, className: 'ak-drawer-sidebar' }, props)));
+        }, className: "ak-drawer-sidebar" }, props)));
 };
 var IconWrapper = function (props) { return (jsx("button", __assign({ type: "button", css: {
         alignItems: 'center',
@@ -82,7 +82,7 @@ var DrawerPrimitive = /** @class */ (function (_super) {
         var _a = this.props, children = _a.children, Icon = _a.icon, onClose = _a.onClose, onCloseComplete = _a.onCloseComplete, props = __rest(_a, ["children", "icon", "onClose", "onCloseComplete"]);
         return (jsx(Slide, __assign({ component: Wrapper, onExited: onCloseComplete }, props),
             jsx(Sidebar, null,
-                jsx(IconWrapper, { onClick: onClose, "data-test-selector": "DrawerPrimitiveSidebarCloseButton" }, Icon ? jsx(Icon, { size: "large" }) : jsx(ArrowLeft, { label: "Close drawer" }))),
+                jsx(IconWrapper, { className: "ak-drawer-icon-wrapper", onClick: onClose, "data-test-selector": "DrawerPrimitiveSidebarCloseButton" }, Icon ? jsx(Icon, { size: "large" }) : jsx(ArrowLeft, { label: "Close drawer" }))),
             jsx(Content, null, children)));
     };
     return DrawerPrimitive;
